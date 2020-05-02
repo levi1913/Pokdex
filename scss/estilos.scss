@@ -1,0 +1,294 @@
+$rojo: #EF4036;
+$negro: #58585A;
+
+@mixin letras {
+    letter-spacing: 4px;
+    box-shadow: 1px 2px 8px black;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header{
+    height: auto;
+    width: 100%;
+}
+#encabezado{
+    width: 100%;
+    height: 100px;
+    background: $rojo;
+}
+#logo{
+    height: auto;
+    width: 250px;
+    margin-left: 15px;
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    background: $negro;
+    
+    display: inline-block;
+    font-size: 25px;
+    ul{
+        list-style: none;
+        li{
+            padding-top: 10px;
+            padding-left: 10px;
+            font-style: italic;
+            
+            a{
+                text-decoration: none;
+                color: white;
+               
+            }
+            :hover{
+                color: black;
+                transition: 100ms ease-in;
+            }
+        }
+       
+    
+    }
+}
+#general{
+    height: auto;
+    width: all;
+    margin: auto;
+    
+   #busqueda{
+        width: 80%;
+        height: 150px;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+        
+        label{
+            margin-right: 25px;
+            font-size: 25px;
+            
+        }
+        input[type=number]{
+            margin-right: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 3px 5px black;
+            text-align: center;
+        
+        }
+        input[type=button]{
+            position: absolute;
+            border-radius: 10px;
+            background: $rojo;
+            width: 100px;
+            left: 45%;
+            padding-bottom: 2px;
+            font-size: 20px;
+            letter-spacing: 2px;
+            font-style: italic;
+            color: white;
+            box-shadow: 4px 3px 5px black;
+            margin-top: 10px;
+
+            
+        }
+        input[type=button]:hover{
+            background: rgba(255, 0, 0, 0.705);
+            transition: 100ms ease;
+        }
+        
+   }
+
+   #contenido{
+        height: auto;
+        width: 80%;
+        margin: auto;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 100ms ease-in;
+        margin-bottom: 20px;
+        box-shadow: 1px 2px 8px black;
+        
+
+        ul{
+            list-style: none;
+        }
+        #splide{
+            padding-top: 30px;
+            font-size: 28px;
+            border-bottom: 1px solid black;
+            text-shadow: 4px 1px 5px black
+        }
+        .front,.back{
+            border-bottom: 1px solid black;
+        }
+        #hablilidad{
+            padding-top: 30px;
+            line-height: 50px;
+            font-size: 19px;
+               
+            li{
+                border-radius: 20px;
+                width: 80%;
+                margin-left: 15px;
+                margin-bottom: 15px;
+            }
+            .hidden{
+                background: #d9b704;
+                color: black;
+                @include letras();
+
+            }
+        }
+        #tipos{
+            padding-top: 30px;
+            line-height: 50px;
+            font-size: 19px;
+            
+            li{
+                border-radius: 20px;
+                width: 80%;
+                margin-left: 15px;
+                margin-bottom: 15px;
+            }
+
+            .poison{
+                background: purple;
+                color: white;
+                @include letras();
+
+            }
+            .grass{
+                background: green;
+                color: white;
+                @include letras();
+            }
+            .fire{
+                background: orangered;
+                color: black;
+                @include letras();
+            }
+            .flying{
+                background: #69a9bd87;
+                color: black;
+                @include letras();
+            }
+            .water{
+                background: rgb(47, 170, 207);
+                color: black;
+                @include letras();
+            }
+            .bug{
+                background: rgb(159, 207, 47);
+                color: black;
+                @include letras();
+            }
+            .normal{
+                background: #aea791;
+                color: black;
+                @include letras();
+            }
+            .electric{
+                background: #d6c207;
+                color: black;
+                @include letras();
+            }
+            .ground{
+                background: #d67507;
+                color: black;
+                @include letras();
+            }
+            .fairy{
+                background: #e980cf;
+                color: black;
+                @include letras();
+            }
+            .fighting{
+                background: #df2433;
+                color: white;
+                @include letras();
+            }
+            .psychic{
+                background: #e850d7e6;
+                color: white;
+                @include letras();
+            }
+            .rock{
+                background: #726871;
+                color: white;
+                @include letras();
+            }
+            .steel{
+                background: #847d84;
+                color: white;
+                @include letras();
+            }
+            .ice{
+                background: #7cc6ff;
+                color: white;
+                @include letras();
+            }
+            .ghost{
+                background: #700cce;
+                color: white;
+                @include letras();
+            }
+            .dragon{
+                background: #1802e0;
+                color: white;
+                @include letras();
+            }
+            .dark{
+                background: #311c07;
+                color: white;
+                @include letras();
+            }
+            
+        }
+        #stats{
+            padding-top: 30px;
+            font-size: 18px;
+
+            .speed{
+                color: rgb(247, 118, 139);
+            }
+            .special-defense{
+                color: green;
+            }
+            .special-attack{
+                color: blue;
+            }
+            .defense{
+                color: rgb(199, 199, 2);
+            }
+            .attack{
+                color: orange;
+            }
+            .hp{
+                color: rgb(209, 76, 98);
+            }
+        }
+        @media(max-width:500px){
+            #stats,#tipos,#hablilidad{
+                font-size: 14px;
+            }
+           
+        }
+   }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: $negro;
+    opacity: .7;
+    height: 100px;
+}

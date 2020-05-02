@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: auto;
+  width: 100%;
+}
+
+#encabezado {
+  width: 100%;
+  height: 100px;
+  background: #EF4036;
+}
+
+#logo {
+  height: auto;
+  width: 250px;
+  margin-left: 15px;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background: #58585A;
+  display: inline-block;
+  font-size: 25px;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-style: italic;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar ul li :hover {
+  color: black;
+  transition: 100ms ease-in;
+}
+
+#general {
+  height: auto;
+  width: all;
+  margin: auto;
+}
+#general #busqueda {
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+#general #busqueda label {
+  margin-right: 25px;
+  font-size: 25px;
+}
+#general #busqueda input[type=number] {
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 3px 5px black;
+  text-align: center;
+}
+#general #busqueda input[type=button] {
+  position: absolute;
+  border-radius: 10px;
+  background: #EF4036;
+  width: 100px;
+  left: 45%;
+  padding-bottom: 2px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-style: italic;
+  color: white;
+  box-shadow: 4px 3px 5px black;
+  margin-top: 10px;
+}
+#general #busqueda input[type=button]:hover {
+  background: rgba(255, 0, 0, 0.705);
+  transition: 100ms ease;
+}
+#general #contenido {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+  transition: all 100ms ease-in;
+  margin-bottom: 20px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido ul {
+  list-style: none;
+}
+#general #contenido #splide {
+  padding-top: 30px;
+  font-size: 28px;
+  border-bottom: 1px solid black;
+  text-shadow: 4px 1px 5px black;
+}
+#general #contenido .front, #general #contenido .back {
+  border-bottom: 1px solid black;
+}
+#general #contenido #hablilidad {
+  padding-top: 30px;
+  line-height: 50px;
+  font-size: 19px;
+}
+#general #contenido #hablilidad li {
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+#general #contenido #hablilidad .hidden {
+  background: #d9b704;
+  color: black;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos {
+  padding-top: 30px;
+  line-height: 50px;
+  font-size: 19px;
+}
+#general #contenido #tipos li {
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+#general #contenido #tipos .poison {
+  background: purple;
+  color: white;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .grass {
+  background: green;
+  color: white;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .fire {
+  background: orangered;
+  color: black;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .flying {
+  background: #69a9bd87;
+  color: black;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .water {
+  background: #2faacf;
+  color: black;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .bug {
+  background: #9fcf2f;
+  color: black;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .normal {
+  background: #aea791;
+  color: black;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .electric {
+  background: #d6c207;
+  color: black;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .ground {
+  background: #d67507;
+  color: black;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .fairy {
+  background: #e980cf;
+  color: black;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .fighting {
+  background: #df2433;
+  color: white;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .psychic {
+  background: #e850d7e6;
+  color: white;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .rock {
+  background: #726871;
+  color: white;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .steel {
+  background: #847d84;
+  color: white;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .ice {
+  background: #7cc6ff;
+  color: white;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .ghost {
+  background: #700cce;
+  color: white;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .dragon {
+  background: #1802e0;
+  color: white;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #tipos .dark {
+  background: #311c07;
+  color: white;
+  letter-spacing: 4px;
+  box-shadow: 1px 2px 8px black;
+}
+#general #contenido #stats {
+  padding-top: 30px;
+  font-size: 18px;
+}
+#general #contenido #stats .speed {
+  color: #f7768b;
+}
+#general #contenido #stats .special-defense {
+  color: green;
+}
+#general #contenido #stats .special-attack {
+  color: blue;
+}
+#general #contenido #stats .defense {
+  color: #c7c702;
+}
+#general #contenido #stats .attack {
+  color: orange;
+}
+#general #contenido #stats .hp {
+  color: #d14c62;
+}
+@media (max-width: 500px) {
+  #general #contenido #stats, #general #contenido #tipos, #general #contenido #hablilidad {
+    font-size: 14px;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #58585A;
+  opacity: 0.7;
+  height: 100px;
+}
